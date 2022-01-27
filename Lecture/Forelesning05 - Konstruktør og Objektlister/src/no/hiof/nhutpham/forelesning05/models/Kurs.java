@@ -1,5 +1,5 @@
 // Hvis vi benytter en pakke må dette være inkludert på dette formatet.
-package no.hiof.nhutphm.forelesning5.models;
+package no.hiof.nhutpham.forelesning05.models;
 
 public class Kurs {
 

@@ -1,11 +1,11 @@
 // Hvis vi benytter en pakke må dette være inkludert på dette formatet.
-package no.hiof.nhutphm.forelesning5.models;
+package no.hiof.nhutpham.forelesning05;
 
 // Vi må importere klassene vi benytter så lenge disse ikke ligger i samme filsti som
 // klassen vi skriver i.
-import no.hiof.nhutphm.forelesning5.models.Student;
+import no.hiof.nhutpham.forelesning05.models.Student;
 
-public class KonstruktorerOgObjektreferanser {
+public class Main {
     public static void main(String[] args) {
 
         // Eksempel på bruk av en Konstruktør
