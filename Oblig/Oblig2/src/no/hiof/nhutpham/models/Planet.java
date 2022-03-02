@@ -15,8 +15,10 @@ public class Planet {
 
     }
 
-    public void printPlanet() {
-        System.out.println("The planet " + name + " has:" +" \nradius: " + getPlanetRadius() + "km \nmass: " + getPlanetMass() + "kg");
+    @Override
+    public String toString() {
+        return "The planet " + name + " has:" +" \nradius: " + getPlanetRadius() + "km \nmass: " + getPlanetMass() + "kg";
+
     }
 
     public void printSurfaceGravity(){

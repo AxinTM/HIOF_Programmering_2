@@ -15,10 +15,11 @@ public class Star {
        this.effectiveTemp = effectiveTemp;
 
    }
+   @Override
+   public String toString() {
+        return "This Solar System has a star named " + name + " with: \nradius: " + getSunRadius() +
+                "km \nmass: " + getSunMass() + "kg \neffective temp: " + effectiveTemp + " Celsius";
 
-   public void printStar() {
-        System.out.println("This Solar System has a star named " + name + " with: \nradius: " + getSunRadius() +
-                "km \nmass: " + getSunMass() + "kg \neffective temp: " + effectiveTemp + " Celsius");
     }
 
     public double getSunMass(){

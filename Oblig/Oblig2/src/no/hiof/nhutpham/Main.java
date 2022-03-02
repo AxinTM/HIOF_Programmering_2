@@ -28,13 +28,13 @@ public class Main {
         solarSystem.addPlanet(uranus);
         solarSystem.addPlanet(neptune);
 
-        solarSystem.printStar();
+        System.out.println(solarSystem.toString());
 
         System.out.println();
-        saturn.printPlanet();
+        System.out.println(saturn.toString());
 
         System.out.println();
-        sun.printStar();
+        System.out.println(sun.toString());
 
         System.out.println();
         saturn.printSurfaceGravity();
