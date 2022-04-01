@@ -76,5 +76,7 @@ public class Main {
         earth.printOrbitingVelocity(earth.distanceToCentralBody(135));
         System.out.println();
         earth.printOrbitingVelocity(earth.distanceToCentralBody(180));
+
+
     }
 }

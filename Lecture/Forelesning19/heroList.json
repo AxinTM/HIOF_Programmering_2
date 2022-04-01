@@ -1,0 +1,21 @@
+[ {
+  "name" : "Superman",
+  "alterEgo" : "Clark Kent",
+  "sidekicks" : [ ]
+}, {
+  "name" : "Hulk",
+  "alterEgo" : "Bruce Banner",
+  "sidekicks" : [ ]
+}, {
+  "name" : "Wonder Woman",
+  "alterEgo" : "Diana Prince",
+  "sidekicks" : [ ]
+}, {
+  "name" : "Batman",
+  "alterEgo" : "Bruce Wayne",
+  "sidekicks" : [ {
+    "name" : "Robin",
+    "alterEgo" : "Jason Todd",
+    "sidekicks" : [ ]
+  } ]
+} ]
