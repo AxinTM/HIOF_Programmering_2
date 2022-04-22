@@ -1,9 +1,0 @@
-
-
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î‡­8ıÌ¢ı€0
-Š
-java:S1319"mThe type of "publishedGame" should be an interface such as "List" rather than the implementation "ArrayList".(ÚêƒÍ8ıÌ¢ı€0
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÛÃ‰8ÓâÆØ€0
-w	java:S116"]Rename this field "total_publish_game" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡èŞüÿÿÿÿ
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œş•‹8‚Í¢ı€0
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÛÃ‰8ƒÍ¢ı€0

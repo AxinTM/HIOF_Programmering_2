@@ -34,6 +34,6 @@ public class Main {
 
         PGGUI pg= new PGGUI("PG");
         pg.setVisible(true);
-        pg.setBounds(600,200,750,500);
+        pg.setBounds(600,200,750,650);
     }
 }

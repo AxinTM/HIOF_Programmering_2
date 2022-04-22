@@ -8,6 +8,8 @@ import no.hiof.nhutnp.modules.Platform;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class PGGUI extends JFrame {
 
@@ -33,6 +35,16 @@ public class PGGUI extends JFrame {
     private JTextField addGameGenre;
     private JTextField addGameDeveloper;
     private JTextField addGamePublisher;
+    private JButton editGameButton;
+    private JTextField addPlatformName;
+    private JTextField addPlatformProducer;
+    private JTextField addPlatformCPU;
+    private JTextField addPlatformStorage;
+    private JTextField addPlatformGPU;
+    private JTextField addPlatformMemory;
+    private JButton addPlatform;
+    private JButton editPlatform;
+    private JButton addPCPlatformButton;
 
 
     public PGGUI(String title) {
@@ -84,10 +96,67 @@ public class PGGUI extends JFrame {
         platformModel.addElement(nSwitch);
         platformModel.addElement(komplettA245);
         platformModel.addElement(pc);
-    }
 
+        addPlatform.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = addPlatformName.getText();
+                String producer = addPlatformProducer.getText();
+                String cpu = addPlatformCPU.getText();
+                String gpu = addPlatformGPU.getText();
+                String memory = addPlatformMemory.getText();
+                String storage = addPlatformStorage.getText();
+
+                Platform newPlatform = new Platform(name, producer, cpu, gpu, memory, storage);
+                platformModel.addElement(newPlatform);
+            }
+        });
+
+        addPCPlatformButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = addPlatformName.getText();
+                String producer = addPlatformProducer.getText();
+
+
+                PCPlatform newPCPlatform = new PCPlatform(name, producer);
+                platformModel.addElement(newPCPlatform);
+            }
+        });
+        editPlatform.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String name = addPlatformName.getText();
+                String producer = addPlatformProducer.getText();
+                String cpu = addPlatformCPU.getText();
+                String gpu = addPlatformGPU.getText();
+                String memory = addPlatformMemory.getText();
+                String storage = addPlatformStorage.getText();
+
+                HWConfig currentPlatform = platformList.getSelectedValue();
+                if (currentPlatform instanceof Platform) {
+                    Platform platform = (Platform) platformList.getSelectedValue();
+                    platform.setName(name);
+                    platform.setProducer(producer);
+                    platform.setCpu(cpu);
+                    platform.setGpu(gpu);
+                    platform.setMemory(memory);
+                    platform.setStorage(storage);
+                } else if (currentPlatform instanceof PCPlatform) {
+                    PCPlatform pcplatform = (PCPlatform) platformList.getSelectedValue();
+                    pcplatform.setName(name);
+                    pcplatform.setProducer(producer);
+                }
+                platformList.updateUI();
+            }
+        });
+
+    }
     private DefaultListModel<HWConfig> platformModel = new DefaultListModel<>();
     private DefaultListModel<Game> gameModel = new DefaultListModel<>();
+
+
 
     Platform ps1 = new Platform("PS1", "Sony", "CXD8514Q", "MIPS R3000A", "EDO DRAM 2MB", "Memory Card 1MB");
     Platform ps2 = new Platform("PS2", "Sony", "GS-250nm", "MIPS R5900", "RDRAM 32MB", "40GB HDD");
