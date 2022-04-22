@@ -17,6 +17,7 @@ public class CreatePersonGUI extends JFrame {
     private JLabel outputLabel;
     private JList<Person> personJList;
     private JButton editPersonButton;
+    private JButton deletePersonButton;
 
     private DefaultListModel<Person> personListModel = new DefaultListModel<>();
 
@@ -47,32 +48,54 @@ public class CreatePersonGUI extends JFrame {
                 }
             }
         });
-        try{
         editPersonButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Person editPerson = personJList.getSelectedValue();
-                String fullName = fullNameField.getText();
-                int age = Integer.parseInt(ageField.getText());
+                try {
+                    Person editPerson = personJList.getSelectedValue();
+                    String fullName = fullNameField.getText();
+                    int age = Integer.parseInt(ageField.getText());
 
-                Person selectedPerson = personJList.getSelectedValue();
+                    Person selectedPerson = personJList.getSelectedValue();
 
-                selectedPerson.setFullName(fullName);
-                selectedPerson.setAge(age);
+                    selectedPerson.setFullName(fullName);
+                    selectedPerson.setAge(age);
 
+                    personJList.updateUI();
+                } catch (NullPointerException n1)
+                {
+                    JFrame jFrame = new JFrame();
+                    JOptionPane.showMessageDialog(jFrame, "NO object selected!");
+                } catch(NumberFormatException n1){
+                    JFrame jFrame = new JFrame();
+                    JOptionPane.showMessageDialog(jFrame, "You must enter an int value for Age!");
+                }
+                }
+        });
+        deletePersonButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Person selectedPerson = personJList.getSelectedValue();
+                int selectedIndex = personJList.getSelectedIndex();
+
+                personListModel.remove(selectedIndex);
                 personJList.updateUI();
-            }catch()
+            }
         });
 
         personJList.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
+                try {
                 Person selectedPerson = personJList.getSelectedValue();
 
                 fullNameField.setText(selectedPerson.getFullName());
                 ageField.setText(Integer.toString(selectedPerson.getAge()));
                 outputLabel.setText(selectedPerson.toString());
-            }
+            }catch (NullPointerException n1) {
+                    System.out.println("");
+                }
+                }
         });
     }
 }
