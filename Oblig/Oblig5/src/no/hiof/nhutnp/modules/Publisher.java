@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Publisher extends Company{
 
-    private int total_publish_game;
+    private int totalPublishGame;
     private ArrayList<Game> publishedGame = new ArrayList<>();
 
 
@@ -12,12 +12,12 @@ public class Publisher extends Company{
         super(name, location, foundingYear);
     }
 
-    public int getTotal_publish_game() {
-        return total_publish_game;
+    public int getTotalPublishGame() {
+        return totalPublishGame;
     }
 
-    public void setTotal_publish_game(int total_publish_game) {
-        this.total_publish_game = total_publish_game;
+    public void setTotalPublishGame(int totalPublishGame) {
+        this.totalPublishGame = totalPublishGame;
     }
 
     public ArrayList<Game> getPublishedGame() {

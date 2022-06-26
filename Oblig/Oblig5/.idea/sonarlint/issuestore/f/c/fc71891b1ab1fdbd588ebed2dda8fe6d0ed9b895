@@ -1,0 +1,81 @@
+
+`
+java:S1192­"IDefine a constant instead of duplicating this literal "Nintendo" 7 times.(Š˜™í
+f
+java:S1192¨"JDefine a constant instead of duplicating this literal "Microsoft" 4 times.(¤—è´ûÿÿÿÿ
+=
+java:S1604;"(Make this anonymous inner class a lambda(É™Û|
+C
+java:S1604d"(Make this anonymous inner class a lambda(ÀĞÁîüÿÿÿÿ
+C
+java:S1604s"(Make this anonymous inner class a lambda(£„È¡ùÿÿÿÿ
+J
+java:S1604~"(Make this anonymous inner class a lambda(ß¶Š¨üÿÿÿÿ8š¨„…0
+<
+java:S1948¡"%Make "ps1" transient or serializable.(é™ğŞ
+A
+java:S1948¢"%Make "ps2" transient or serializable.(íïƒŞúÿÿÿÿ
+A
+java:S1948£"%Make "ps3" transient or serializable.(Õ“ÿ«ÿÿÿÿÿ
+A
+java:S1948¤"%Make "ps4" transient or serializable.(Í Êøşÿÿÿÿ
+D
+java:S1948¥"(Make "ps4Pro" transient or serializable.(ô–ñîüÿÿÿÿ
+A
+java:S1948¦"%Make "ps5" transient or serializable.(ÚµÙ¹ùÿÿÿÿ
+B
+java:S1948¨"&Make "xbox" transient or serializable.(¤—è´ûÿÿÿÿ
+E
+java:S1948©")Make "xbox360" transient or serializable.(çÀ¨Òúÿÿÿÿ
+E
+java:S1948ª")Make "xboxOne" transient or serializable.(´˜õ½ÿÿÿÿÿ
+H
+java:S1948«",Make "xboxSerieX" transient or serializable.(öıÇşÿÿÿÿ
+<
+java:S1948­"%Make "nes" transient or serializable.(Š˜™í
+=
+java:S1948®"&Make "snes" transient or serializable.(ï™îà
+<
+java:S1948¯"%Make "n64" transient or serializable.(ñ‡‰
+G
+java:S1948°"+Make "nGameCube" transient or serializable.(ØÕº¯ùÿÿÿÿ
+B
+java:S1948±"&Make "nWii" transient or serializable.(ò÷™ùÿÿÿÿ
+C
+java:S1948²"'Make "nWiiU" transient or serializable.(Êèüÿÿÿÿ
+@
+java:S1948³")Make "nSwitch" transient or serializable.(ôÇ‰¬
+J
+java:S1948µ".Make "komplettA245" transient or serializable.(®Ï¯Üşÿÿÿÿ
+;
+java:S1948¶"$Make "pc" transient or serializable.(çˆ•Ò
+^
+java:S32524"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ºÀœx
+E
+java:S1068"/Remove this unused "tabbedPane1" private field.(ÀĞ™©
+H
+java:S1068"-Remove this unused "gamePanel" private field.(¾Ô™Ëøÿÿÿÿ
+G
+java:S1068",Remove this unused "gameName" private field.(×ª”†üÿÿÿÿ
+F
+java:S1068"0Remove this unused "gamePlatform" private field.(§‡˜ã
+C
+java:S1068"-Remove this unused "gameGenre" private field.(©—ïÊ
+A
+java:S1068"+Remove this unused "gameDev" private field.(‡Òª
+A
+java:S1068"+Remove this unused "gamePub" private field.(ê†ÇÑ
+G
+java:S1068 "1Remove this unused "addGameButton" private field.(™„†³
+E
+java:S1068!"/Remove this unused "addGameName" private field.(çÉ£
+I
+java:S1068""3Remove this unused "addGamePlatform" private field.(¬²®ô
+K
+java:S1068#"0Remove this unused "addGameGenre" private field.(ÃğšÄÿÿÿÿÿ
+I
+java:S1068$"4Remove this unused "addGameDeveloper" private field.(À… )
+O
+java:S1068%"4Remove this unused "addGamePublisher" private field.(¿è„“şÿÿÿÿ
+M
+java:S1068&"2Remove this unused "editGameButton" private field.(áºú”üÿÿÿÿ

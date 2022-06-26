@@ -1,0 +1,8 @@
+
+k	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬‘¼­ıÿÿÿÿ
+œ
+java:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ú«ïšúÿÿÿÿ
+@
+java:S2185>"%Remove this silly call to "Math.ceil"(‘µ¸„ûÿÿÿÿ
+\
+java:S1126D"AReplace this if-then-else statement by a single return statement.(ïÚÁşÿÿÿÿ

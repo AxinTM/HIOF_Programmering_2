@@ -107,7 +107,7 @@ public class PGGUI extends JFrame {
                 String memory = addPlatformMemory.getText();
                 String storage = addPlatformStorage.getText();
 
-                Platform newPlatform = new Platform(name, producer, cpu, gpu, memory, storage);
+                Platform newPlatform = new Platform(name, producer, gpu, cpu, memory, storage);
                 platformModel.addElement(newPlatform);
             }
         });
